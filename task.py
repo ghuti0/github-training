@@ -1,10 +1,11 @@
 n=0
-for x in range (245756):
-    m= []
-    for i in range(m):
-        if x%i!=0:
+for x in range (245690,245756+1):
+    m = []
+    n += 1
+    for i in range(2,x//2+1):
+        if x%i==0:
             m.append(i)
         if len(m)>0:
             break
-    if len(m)==1:
-        print(n)
+    if len(m)==0:
+        print(n,x)
